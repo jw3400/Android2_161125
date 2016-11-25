@@ -94,6 +94,26 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        b1 = (Button) findViewById(R.id.button);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        b2 = (Button) findViewById(R.id.button2);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Layout1.setVisibility(View.GONE);
+                s1.setChecked(false);
+                r1.setChecked(true);
+            }
+        });
+
+
+
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
