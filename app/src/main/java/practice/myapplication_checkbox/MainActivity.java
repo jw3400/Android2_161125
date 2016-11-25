@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     rg = (RadioGroup) findViewById(R.id.radioGroup);
                     image = (ImageView) findViewById(R.id.imageView);
 
+                    image.setImageResource(R.drawable.jellybean);
                     r1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 Layout1.setVisibility(View.GONE);
                 s1.setChecked(false);
                 r1.setChecked(true);
+                image.setImageResource(R.drawable.jellybean);
             }
         });
 
